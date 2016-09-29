@@ -1,0 +1,18 @@
+Thu Sep 29 09:05:09 BRT 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Thu Sep 29 09:05:09 BRT 2016:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-0157-75d5-80bd-00004899e082
+no diretório de banco de dados C:\Temp\ProjInter\bd\ProjInter 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b26
+user.dir=C:\Temp\ProjInter\glassfish4\javadb
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=C:\Temp\ProjInter\bd
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Sep 29 09:05:22 BRT 2016:
+Encerrando a instância a816c00e-0157-75d5-80bd-00004899e082
+Thu Sep 29 09:05:22 BRT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = ProjInter), (DRDAID = {2}), Banco de dados 'ProjInter' fechado.
