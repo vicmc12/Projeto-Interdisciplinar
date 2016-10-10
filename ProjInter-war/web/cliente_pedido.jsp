@@ -14,10 +14,24 @@
     <body>
         <form actio="FrontController" value="Pedido">
             <p><h1>Fazer pedido</h1></p>
-            <p>Tipo de entrega: <input type="text" name="tipo"/></p>
-            <p>Endereço do Destinatário: <input type="text" name="end"/></p>
-            <p>Numero: <input type="number" name="num"/></p>
-        </form>
-        
-    </body>
+            <p>Tipo de entrega: 
+                <select>
+                    
+                    <option>
+                    <p>Documento Confidencial</p>
+                    </option>
+                    <option>
+                    <p>Documento Simples</p>
+                    </option>
+                    
+                </select>
+                                    
+            </p>
+        <p>Endereço do Destinatário: <input type="text" name="end"/></p>
+        <p>Numero: <input type="number" name="num"/></p>
+        <p><input type="submit" value="Solicitar Entrega"/></p>
+        <p><input type="hidden" value="pedido"</p>
+    </form>
+
+</body>
 </html>
