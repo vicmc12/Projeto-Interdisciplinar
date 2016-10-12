@@ -1,29 +1,30 @@
-Mon Oct 10 15:04:41 BRT 2016 : Apache Derby Network Server - 10.11.1.2 - (1629631) started and ready to accept connections on port 1527
+Wed Oct 12 02:13:11 BRT 2016 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Mon Oct 10 15:04:41 BRT 2016:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0157-afc4-9fd6-ffffc799ffd9 
-on database directory C:\Users\paulo.lima\Documents\PersonalDocs\PI\Projeto-Interdisciplinar\bd\ProjInter with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
-Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_102/db/lib/derby.jar
+Wed Oct 12 02:13:12 BRT 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0157-b74f-0561-fffff5fcde40 
+on database directory C:\Users\Vicmc12\Documents\NetBeansProjects\Projeto-Interdisciplinar\bd\ProjInter with class loader sun.misc.Launcher$AppClassLoader@144bcfa 
+Loaded from file:/C:/Users/Vicmc12/Documents/glassfish4/javadb/lib/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_102-b14
-user.dir=C:\Program Files\Java\jdk1.8.0_102\db
+java.runtime.version=1.8.0_101-b13
+user.dir=C:\Users\Vicmc12\Documents\glassfish4\javadb
 os.name=Windows 10
-os.arch=amd64
+os.arch=x86
 os.version=10.0
-derby.system.home=C:\Users\paulo.lima\Documents\PersonalDocs\PI\Projeto-Interdisciplinar\bd
+derby.system.home=C:\Users\Vicmc12\Documents\NetBeansProjects\Projeto-Interdisciplinar\bd
 Database Class Loader started - derby.database.classpath=''
-Mon Oct 10 15:04:41 BRT 2016 Thread[DRDAConnThread_2,5,main] (XID = 292), (SESSIONID = 0), (DATABASE = ProjInter), (DRDAID = {1}), Cleanup action starting
+Wed Oct 12 02:13:12 BRT 2016 Thread[DRDAConnThread_2,5,main] (XID = 724), (SESSIONID = 0), (DATABASE = ProjInter), (DRDAID = {1}), Cleanup action starting
 java.sql.SQLNonTransientConnectionException: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
 	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
 	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
@@ -32,24 +33,25 @@ java.sql.SQLNonTransientConnectionException: Ocorreu uma falha de autenticação d
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: ERROR 08004: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
-	... 18 more
+Caused by: java.sql.SQLException: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
 ============= begin nested exception, level (1) ===========
-ERROR 08004: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
-	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+java.sql.SQLException: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
 	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
-	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
 	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
 	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
@@ -60,10 +62,10 @@ ERROR 08004: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
 ============= end nested exception, level (1) ===========
 Cleanup action completed
-Mon Oct 10 15:04:41 BRT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = ProjInter), (DRDAID = {1}), Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
+Wed Oct 12 02:13:12 BRT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = ProjInter), (DRDAID = {1}), Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
 ----------------------------------------------------------------
-Mon Oct 10 16:47:28 BRT 2016: Shutting down Derby engine
+Wed Oct 12 02:33:26 BRT 2016: Shutting down Derby engine
 ----------------------------------------------------------------
-Mon Oct 10 16:47:28 BRT 2016:
-Shutting down instance a816c00e-0157-afc4-9fd6-ffffc799ffd9 on database directory C:\Users\paulo.lima\Documents\PersonalDocs\PI\Projeto-Interdisciplinar\bd\ProjInter with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Wed Oct 12 02:33:26 BRT 2016:
+Shutting down instance a816c00e-0157-b74f-0561-fffff5fcde40 on database directory C:\Users\Vicmc12\Documents\NetBeansProjects\Projeto-Interdisciplinar\bd\ProjInter with class loader sun.misc.Launcher$AppClassLoader@144bcfa 
 ----------------------------------------------------------------
